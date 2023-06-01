@@ -75,8 +75,18 @@ footer {
   background-color: #aaa;
 }
 
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .step-box {
+    width: 90%;
+    margin-bottom: 20px;
+  }
 
 @media screen and (max-width: 425px) {
+  
   header {
     width: 100%;
   }
@@ -104,8 +114,8 @@ footer {
     margin-bottom: 10px;
   }
 }
+@media screen and (mIN-width: 769px) {
 
-@media screen and (min-width: 769px) {
   main {
     display: flex;
     flex-wrap: wrap;
@@ -114,12 +124,12 @@ footer {
 
   .step-box {
     flex-basis: calc(33.33% - 20px);
-    margin-right: 20px;
+    margin: 0 auto;
     margin-bottom: 20px;
   }
 
   .step-box:last-child {
     margin-right: 0;
   }
+ }
 }
-
